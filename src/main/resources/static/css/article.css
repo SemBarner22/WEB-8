@@ -1,6 +1,7 @@
 /* article */
 main article {
     margin-bottom: 2em;
+    word-break: break-all;
 }
 
 main article .title {

@@ -96,7 +96,7 @@
         </div>
         <ul class="attachment">
             <#list post.tags as pt>
-                <li>Announcement of <a href="#">${pt}</a></li>
+                    <li>Announcement of <a href="#">${pt.name}</a></li>
             </#list>
         </ul>
         <div class="footer">

@@ -81,4 +81,5 @@ public class User {
         post.setUser(this);
         getPosts().add(post);
     }
+
 }

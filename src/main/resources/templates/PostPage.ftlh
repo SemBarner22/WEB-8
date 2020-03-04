@@ -27,10 +27,12 @@
             </div>
         </div>
         <#list post.comments as cs>
-            <div>${cs.user.login}</div>
-            <div>${cs.text}</div>
+            <div class="comment">
+                <div class="author">${cs.user.login} says:</div>
+                <div class="text">${cs.text}</div>
+            </div>
         </#list>
     <#else>
-        <div>No such User</div>
+        <div>No such Post</div>
     </#if>
 </@c.page>
