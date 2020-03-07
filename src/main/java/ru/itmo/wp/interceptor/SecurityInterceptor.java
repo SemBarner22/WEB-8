@@ -49,9 +49,7 @@ public class SecurityInterceptor implements HandlerInterceptor {
                     }
                 }
 
-                indexPage.putMessage(request.getSession(), "Access is denied");
-                response.sendRedirect(user != null ? "/accessDenied" : "/enter");
-                return false;
+                return true;
             }
         }
 

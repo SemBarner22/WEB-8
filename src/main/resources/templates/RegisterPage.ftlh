@@ -17,6 +17,15 @@
                     </div>
                     <@c.error "registerForm.login"/>
                 </div>
+<#--                <div class="field">-->
+<#--                    <div class="name">-->
+<#--                        <label for="username">Name</label>-->
+<#--                    </div>-->
+<#--                    <div class="value">-->
+<#--                        <input id="login" name="name" value="${registerForm.name}"/>-->
+<#--                    </div>-->
+<#--                    <@c.error "registerForm.password"/>-->
+<#--                </div>-->
                 <div class="field">
                     <div class="name">
                         <label for="password">Password</label>

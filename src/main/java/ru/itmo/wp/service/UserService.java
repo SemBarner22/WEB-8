@@ -6,6 +6,7 @@ import ru.itmo.wp.form.UserCredentials;
 import ru.itmo.wp.repository.RoleRepository;
 import ru.itmo.wp.repository.UserRepository;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -28,8 +29,11 @@ public class UserService {
     }
 
     public User register(UserCredentials userCredentials) {
+        //Set<Role> roles = new HashSet<>();
+        //roles.add(new Role(Role.Name.ADMIN));
         User user = new User();
         user.setLogin(userCredentials.getLogin());
+        //user.setRoles(roles);
         userRepository.save(user);
         userRepository.updatePasswordSha(user.getId(), userCredentials.getLogin(), userCredentials.getPassword());
         return user;
